@@ -1,11 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals - Martins Amorin. A personal course homepage featuring web development resources, personal information, and Nigeria.">
+
+    <meta name="author" content="Martins Amorin">
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Martins Amorin</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Martins</h1>
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/in/martins-amorin/" target="_blank">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures"
+                target="_blank">Scripture</a>
+
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <h1>Martins Amorin</h1>
+
+
+        <section class="card">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+
+                <div class="intro">
+                    <p>
+                        My name is Martins Amorin, and I am passionate about
+                        technology, creativity, and continuous learning. I enjoy
+                        exploring web development and finding practical ways to
+                        use technology to solve problems.
+                    </p>
+
+                    <p>
+                        I am currently developing my skills in programming,
+                        web design, and digital technology. I enjoy working on
+                        creative projects and learning new skills that will help
+                        me grow professionally.
+                    </p>
+                </div>
+
+                <img src="images/profile.jpg"
+                    alt="Portrait of Martins Amorin"
+                    class="profile-image">
+
+            </div>
+
+
+            <h3>Abuja, Nigeria</h3>
+
+
+            <div class="country-content">
+
+                <figure>
+                    <img src="images/nigeria-flag.jpg"
+                        alt="Official flag of Nigeria">
+
+                    <figcaption>Official Flag of Nigeria</figcaption>
+                </figure>
+
+
+                <p>
+                    Nigeria is one of the largest and most populated countries
+                    in Africa. It is known for its diverse cultures, languages,
+                    music, entrepreneurship, and vibrant cities. Nigeria has a
+                    growing technology industry and is home to many innovative
+                    young professionals and businesses.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="card resources-card">
+
+            <h2>Web Dev Resources</h2>
+
+            <ul>
+
+                <li>
+                    <a href="https://developer.mozilla.org/"
+                        target="_blank">
+                        MDN Web Docs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.w3schools.com/"
+                        target="_blank">
+                        W3Schools
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://css-tricks.com/"
+                        target="_blank">
+                        CSS Tricks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.freecodecamp.org/"
+                        target="_blank">
+                        freeCodeCamp
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.udemy.com/"
+                        target="_blank">
+                        Udemy
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            © <span id="currentyear"></span>
+            Martins Amorin | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+
 </body>
 </html>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #12355b;
+    color: white;
+}
+
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1f2933;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+nav a:hover {
+    background-color: #f4b400;
+    color: #111;
+}
+
+
+/* Main */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+}
+
+
+/* Cards */
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h2 {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.card h3 {
+    text-align: center;
+    margin: 1.5rem 2rem 1rem;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 0.4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* About Section */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+
+.intro p {
+    margin-bottom: 1rem;
+}
+
+
+.profile-image {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Country Section */
+
+.country-content {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+
+.country-content figure {
+    text-align: center;
+}
+
+
+.country-content img {
+    width: 140px;
+    height: auto;
+}
+
+
+figcaption {
+    font-style: italic;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+
+/* Resources */
+
+.resources-card ul {
+    padding: 2rem;
+}
+
+
+.resources-card li {
+    margin-bottom: 0.8rem;
+}
+
+
+.resources-card a {
+    color: #12355b;
+}
+
+
+.resources-card a:hover {
+    color: #d97706;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+footer p {
+    margin: 0.3rem;
+}
+
+
+#lastModified {
+    color: #f4b400;
+    font-size: 0.9rem;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+
+    nav {
+        flex-direction: column;
+    }
+
+
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+
+    .profile-image {
+        margin: auto;
+    }
+
+
+    .country-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+}
