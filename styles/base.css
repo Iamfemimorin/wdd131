@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-
-/* Body */
-
 body {
     font-family: "Roboto", sans-serif;
     background-color: #f4f6f8;
@@ -14,8 +11,6 @@ body {
     line-height: 1.6;
 }
 
-
-/* Header */
 
 header {
     background-color: #12355b;
@@ -32,8 +27,6 @@ header {
     padding: 1rem;
 }
 
-
-/* Navigation */
 
 nav {
     display: flex;
@@ -58,8 +51,6 @@ nav a:hover {
 }
 
 
-/* Main */
-
 main {
     max-width: 1100px;
     margin: 0 auto;
@@ -78,8 +69,6 @@ main h1 {
     font-size: 2rem;
 }
 
-
-/* Cards */
 
 .card {
     background-color: white;
@@ -108,8 +97,6 @@ main h1 {
 }
 
 
-/* About Section */
-
 .about-content {
     display: grid;
     grid-template-columns: 1fr 180px;
@@ -130,8 +117,6 @@ main h1 {
     border-radius: 5px;
 }
 
-
-/* Country Section */
 
 .country-content {
     display: grid;
@@ -160,8 +145,6 @@ figcaption {
 }
 
 
-/* Resources */
-
 .resources-card ul {
     padding: 2rem;
 }
@@ -182,8 +165,6 @@ figcaption {
 }
 
 
-/* Footer */
-
 footer {
     background-color: #12355b;
     color: white;
@@ -202,8 +183,6 @@ footer p {
     font-size: 0.9rem;
 }
 
-
-/* Responsive Design */
 
 @media (max-width: 768px) {
 
