@@ -1,0 +1,160 @@
+/* =========================
+   GLOBAL VARIABLES
+========================= */
+
+:root {
+    --primary-color: #1f3c4d;
+    --secondary-color: #d9a441;
+    --accent-color: #f4f1ea;
+    --text-color: #222;
+    --white: #ffffff;
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+
+/* =========================
+   HAMBURGER BUTTON
+========================= */
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--secondary-color);
+    color: #000;
+    border-radius: 5px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+
+/* =========================
+   TEMPLE GRID
+========================= */
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    margin: 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}

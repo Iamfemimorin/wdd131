@@ -1,0 +1,59 @@
+/* =========================
+   LARGE SCREEN STYLES
+========================= */
+
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    /* Hide hamburger on larger screens */
+
+    #menu-button {
+        display: none;
+    }
+
+    /* Show navigation horizontally */
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.7rem 1rem;
+    }
+
+    /* Main grid */
+
+    main {
+        padding: 2rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+}
