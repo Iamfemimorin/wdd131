@@ -1,6 +1,3 @@
-/* =========================
-   LARGE SCREEN STYLES
-========================= */
 
 @media screen and (min-width: 768px) {
 
@@ -21,14 +18,12 @@
         font-size: 2rem;
     }
 
-    /* Hide hamburger on larger screens */
-
+   
     #menu-button {
         display: none;
     }
 
-    /* Show navigation horizontally */
-
+   
     nav {
         display: flex;
         flex-direction: row;

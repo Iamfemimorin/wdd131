@@ -1,23 +1,16 @@
-// =========================
-// FOOTER COPYRIGHT YEAR
-// =========================
-
 const currentYear = new Date().getFullYear();
 
 document.querySelector("#currentyear").textContent = currentYear;
 
 
-// =========================
+
 // LAST MODIFIED DATE
-// =========================
 
 document.querySelector("#lastModified").textContent =
     `Last Modification: ${document.lastModified}`;
 
 
-// =========================
-// HAMBURGER MENU
-// =========================
+// MENU
 
 const menuButton = document.querySelector("#menu-button");
 const navigation = document.querySelector("#navigation");
