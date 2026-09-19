@@ -8,9 +8,7 @@
     --shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* ------------------------------
-   GLOBAL STYLES
------------------------------- */
+
 
 * {
     box-sizing: border-box;
@@ -30,9 +28,7 @@ img {
     max-width: 100%;
 }
 
-/* ------------------------------
-   HEADER
------------------------------- */
+
 
 header {
     background-color: var(--red);
@@ -47,18 +43,14 @@ header h1 {
     font-size: 2.5rem;
 }
 
-/* ------------------------------
-   MAIN
------------------------------- */
+
 
 main {
     max-width: 1250px;
     margin: 0 auto;
 }
 
-/* ------------------------------
-   HERO
------------------------------- */
+
 
 .hero {
     display: block;
@@ -71,9 +63,7 @@ main {
     height: auto;
 }
 
-/* ------------------------------
-   DATA
------------------------------- */
+
 
 .data {
     padding: 2rem 1rem;
@@ -115,9 +105,7 @@ main {
     text-align: left;
 }
 
-/* ------------------------------
-   WEATHER
------------------------------- */
+
 
 .weather {
     padding: 2rem 1rem;
@@ -140,9 +128,7 @@ main {
     margin: 0 auto;
 }
 
-/* ------------------------------
-   FOOTER
------------------------------- */
+
 
 footer {
     background-color: var(--red);
@@ -155,9 +141,7 @@ footer p {
     margin: 0.5rem 0;
 }
 
-/* ------------------------------
-   LARGE SCREEN
------------------------------- */
+
 
 @media screen and (min-width: 700px) {
 
@@ -179,7 +163,7 @@ footer p {
         object-fit: cover;
     }
 
-    /* DATA CARD */
+    
 
     .data {
         position: absolute;
@@ -191,7 +175,7 @@ footer p {
         box-shadow: var(--shadow);
     }
 
-    /* WEATHER CARD */
+    
 
     .weather {
         position: absolute;
@@ -212,21 +196,14 @@ footer p {
         text-align: left;
     }
 
-    /*
-       Rubric requirement:
-       Weather emoticon using a pseudo-element.
-    */
+    
 
     .weather h2::after {
         content: " ⛅";
         margin-left: 0.75rem;
     }
 
-    /*
-       Rubric requirement:
-       SVG weather icon is mobile only.
-    */
-
+    
     .weather-icon {
         display: none;
     }
