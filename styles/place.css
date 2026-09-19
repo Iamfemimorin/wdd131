@@ -1,0 +1,254 @@
+:root {
+    --red: #d7083f;
+    --green: #00843d;
+    --white: #ffffff;
+    --black: #111111;
+    --light-gray: #f5f5f5;
+    --border: #d6d6d6;
+    --shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+
+header {
+    background-color: var(--red);
+    color: var(--white);
+    text-align: center;
+    border-bottom: 0.4rem solid var(--green);
+    padding: 1.8rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* ------------------------------
+   MAIN
+------------------------------ */
+
+main {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+    display: block;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------------------
+   DATA
+------------------------------ */
+
+.data {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.data h2,
+.weather h2 {
+    margin: 0 0 1.5rem;
+    font-size: 2rem;
+}
+
+.data-content {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.data-content p,
+.weather-content p {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin: 1rem 0;
+    line-height: 1.4;
+}
+
+.data-content strong,
+.weather-content strong {
+    min-width: 130px;
+    text-align: right;
+}
+
+.data-content span,
+.weather-content span {
+    min-width: 180px;
+    text-align: left;
+}
+
+/* ------------------------------
+   WEATHER
+------------------------------ */
+
+.weather {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.weather-icon {
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+
+.weather-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-content {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    background-color: var(--red);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* ------------------------------
+   LARGE SCREEN
+------------------------------ */
+
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    /* DATA CARD */
+
+    .data {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        width: 320px;
+        padding: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.92);
+        box-shadow: var(--shadow);
+    }
+
+    /* WEATHER CARD */
+
+    .weather {
+        position: absolute;
+        top: 310px;
+        right: 20px;
+        width: 320px;
+        padding: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.92);
+        box-shadow: var(--shadow);
+    }
+
+    .data h2,
+    .weather h2 {
+        margin: -1.5rem -1.5rem 1.5rem;
+        padding: 0.8rem 1rem;
+        background-color: var(--green);
+        color: var(--white);
+        text-align: left;
+    }
+
+    /*
+       Rubric requirement:
+       Weather emoticon using a pseudo-element.
+    */
+
+    .weather h2::after {
+        content: " ⛅";
+        margin-left: 0.75rem;
+    }
+
+    /*
+       Rubric requirement:
+       SVG weather icon is mobile only.
+    */
+
+    .weather-icon {
+        display: none;
+    }
+
+    .data-content p,
+    .weather-content p {
+        margin: 0.7rem 0;
+        gap: 0.5rem;
+    }
+
+    .data-content strong,
+    .weather-content strong {
+        min-width: 115px;
+    }
+
+    .data-content span,
+    .weather-content span {
+        min-width: 145px;
+    }
+
+    footer {
+        padding: 2rem;
+        font-size: 1.05rem;
+    }
+}

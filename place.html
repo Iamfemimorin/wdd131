@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore Madagascar through information about its geography, population, capital, languages, currency, time zone, and weather."
+    >
+
+    <meta name="author" content="Martins Amorin">
+
+    <title>Madagascar | Country Page</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+
+    <main>
+
+        
+        <picture class="hero">
+            <source
+                media="(max-width: 699px)"
+                srcset="images/madagascar-small.webp"
+            >
+
+            <source
+                media="(min-width: 700px)"
+                srcset="images/madagascar-large.webp"
+            >
+
+            <img
+                src="images/madagascar-large.webp"
+                alt="Lemurs in Madagascar"
+            >
+        </picture>
+
+       
+        <section class="data" aria-labelledby="data-heading">
+            <h2 id="data-heading">Data</h2>
+
+            <div class="data-content">
+
+                <p>
+                    <strong>Area:</strong>
+                    <span>587,041 sq km</span>
+                </p>
+
+                <p>
+                    <strong>Population:</strong>
+                    <span>27,691,018</span>
+                </p>
+
+                <p>
+                    <strong>Capital:</strong>
+                    <span>Antananarivo</span>
+                </p>
+
+                <p>
+                    <strong>Languages:</strong>
+                    <span>Malagasy, French</span>
+                </p>
+
+                <p>
+                    <strong>Currency:</strong>
+                    <span>Malagasy Ariary</span>
+                </p>
+
+                <p>
+                    <strong>Time Zone:</strong>
+                    <span>UTC+3</span>
+                </p>
+
+                <p>
+                    <strong>Calling Code:</strong>
+                    <span>+261</span>
+                </p>
+
+                <p>
+                    <strong>Internet TLD:</strong>
+                    <span>.mg</span>
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather" aria-labelledby="weather-heading">
+
+            <h2 id="weather-heading">Weather</h2>
+
+            <!-- SVG is displayed only in the mobile view -->
+            <div class="weather-icon">
+                <img
+                    src="images/weather.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+            </div>
+
+            <div class="weather-content">
+
+                <p>
+                    <strong>Temperature:</strong>
+                    <span id="temperature">10 °C</span>
+                </p>
+
+                <p>
+                    <strong>Conditions:</strong>
+                    <span>Partly Cloudy</span>
+                </p>
+
+                <p>
+                    <strong>Wind:</strong>
+                    <span id="wind-speed">5 km/h</span>
+                </p>
+
+                <p>
+                    <strong>Wind Chill:</strong>
+                    <span id="wind-chill">N/A</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © <span id="current-year"></span>
+            | Martins Amorin | Madagascar
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="last-modified"></span>
+        </p>
+
+    </footer>
+
+</body>
+</html>
