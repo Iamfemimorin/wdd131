@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album | WDD131</title>
+
+    <meta name="description"
+        content="Explore a collection of temples from around the world with filters for temple age and size.">
+
+    <meta name="author" content="Martins Amorin">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <h1>Temple Album</h1>
+
+            <button id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation" aria-label="Temple filters">
+
+                <a href="#home"
+                    data-filter="home"
+                    class="active"
+                    aria-current="page">
+                    Home
+                </a>
+
+                <a href="#old" data-filter="old">
+                    Old
+                </a>
+
+                <a href="#new" data-filter="new">
+                    New
+                </a>
+
+                <a href="#large" data-filter="large">
+                    Large
+                </a>
+
+                <a href="#small" data-filter="small">
+                    Small
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <h2>Temple Album</h2>
+
+        <p id="filter-status" class="filter-status" aria-live="polite">
+            Showing all temples
+        </p>
+
+        <div id="temple-grid" class="temple-grid">
+            <!-- JavaScript will create the temple cards here -->
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Martins Amorin | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>

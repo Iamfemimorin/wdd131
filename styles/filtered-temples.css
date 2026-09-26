@@ -1,0 +1,344 @@
+:root {
+    --primary-color: #1f3c4d;
+    --secondary-color: #d9a441;
+    --background-color: #f4f1ea;
+    --text-color: #222222;
+    --white: #ffffff;
+    --border-color: #c9c9c9;
+    --shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ---------- GENERAL ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.5;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.8rem;
+
+    margin: 0 0 1rem;
+
+    text-align: center;
+}
+
+
+/* ---------- MENU BUTTON ---------- */
+
+#menu-button {
+    background: none;
+
+    border: 2px solid transparent;
+
+    color: var(--white);
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    padding: 0.2rem 0.6rem;
+
+    margin-bottom: 0.5rem;
+}
+
+
+#menu-button:focus-visible {
+    border-color: var(--secondary-color);
+
+    outline: 2px solid var(--white);
+
+    outline-offset: 2px;
+
+    border-radius: 5px;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+    display: none;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+nav.open {
+    display: flex;
+}
+
+
+nav a {
+    color: var(--white);
+
+    text-decoration: none;
+
+    padding: 0.8rem 1rem;
+
+    font-size: 1rem;
+
+    border-radius: 5px;
+}
+
+
+nav a:hover,
+nav a:focus-visible,
+nav a.active {
+    background-color: var(--secondary-color);
+
+    color: #000000;
+}
+
+
+nav a:focus-visible {
+    outline: 2px solid var(--white);
+
+    outline-offset: 2px;
+}
+
+
+/* ---------- MAIN ---------- */
+
+main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 1.5rem 1rem 2rem;
+}
+
+
+h2 {
+    color: var(--primary-color);
+
+    text-align: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 2rem;
+
+    margin: 0 0 0.5rem;
+}
+
+
+.filter-status {
+    text-align: center;
+
+    margin: 0 0 1.5rem;
+
+    color: var(--primary-color);
+
+    font-weight: 500;
+}
+
+
+/* ---------- TEMPLE GRID ---------- */
+
+.temple-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+}
+
+
+/* ---------- TEMPLE CARD ---------- */
+
+.temple-card {
+    margin: 0;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+}
+
+
+.temple-card img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 16 / 10;
+
+    object-fit: cover;
+}
+
+
+.temple-card figcaption {
+    padding: 1rem 1.1rem 1.2rem;
+}
+
+
+.temple-card h3 {
+    color: var(--primary-color);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.35rem;
+
+    margin: 0 0 0.8rem;
+}
+
+
+.temple-card p {
+    margin: 0.4rem 0;
+}
+
+
+.temple-card strong {
+    color: var(--primary-color);
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: var(--primary-color);
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+    margin-top: 1rem;
+}
+
+
+footer p {
+    margin: 0.4rem;
+}
+
+
+#lastModified {
+    color: var(--secondary-color);
+
+    font-size: 0.9rem;
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media screen and (min-width: 600px) {
+
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ---------- DESKTOP ---------- */
+
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+
+    .header-container {
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+    }
+
+
+    h1 {
+        margin: 0;
+
+        font-size: 2rem;
+    }
+
+
+    #menu-button {
+        display: none;
+    }
+
+
+    nav,
+    nav.open {
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: flex-end;
+
+        width: auto;
+
+        gap: 0.4rem;
+    }
+
+
+    nav a {
+        padding: 0.7rem 1rem;
+    }
+
+
+    main {
+        padding: 2rem;
+    }
+
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 2rem;
+    }
+
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+}
