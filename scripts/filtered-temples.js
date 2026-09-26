@@ -94,9 +94,6 @@ const temples = [
 
 
 
-/* ==========================================
-   SELECT HTML ELEMENTS
-========================================== */
 
 const templeGrid = document.querySelector("#temple-grid");
 
@@ -110,9 +107,6 @@ const navigation = document.querySelector("#navigation");
 
 
 
-/* ==========================================
-   FORMAT THE DEDICATION DATE
-========================================== */
 
 function formatDate(dateString) {
 
@@ -123,10 +117,6 @@ function formatDate(dateString) {
 }
 
 
-
-/* ==========================================
-   CREATE ONE TEMPLE CARD
-========================================== */
 
 function createTempleCard(temple) {
 
@@ -151,12 +141,11 @@ function createTempleCard(temple) {
 
 
 
-    /* CAPTION */
 
     const figcaption = document.createElement("figcaption");
 
 
-    /* TEMPLE NAME */
+    
 
     const name = document.createElement("h3");
 
@@ -164,7 +153,7 @@ function createTempleCard(temple) {
 
 
 
-    /* LOCATION */
+    
 
     const location = document.createElement("p");
 
@@ -173,7 +162,7 @@ function createTempleCard(temple) {
 
 
 
-    /* DEDICATION DATE */
+    
 
     const dedicated = document.createElement("p");
 
@@ -182,7 +171,7 @@ function createTempleCard(temple) {
 
 
 
-    /* AREA */
+    
 
     const area = document.createElement("p");
 
@@ -213,10 +202,6 @@ function createTempleCard(temple) {
 
 
 
-/* ==========================================
-   DISPLAY TEMPLES
-========================================== */
-
 function displayTemples(templeList) {
 
     templeGrid.innerHTML = "";
@@ -233,10 +218,6 @@ function displayTemples(templeList) {
 }
 
 
-
-/* ==========================================
-   FILTER TEMPLES
-========================================== */
 
 function filterTemples(filter) {
 
@@ -309,10 +290,6 @@ function filterTemples(filter) {
 
 
 
-/* ==========================================
-   UPDATE THE PAGE AFTER FILTERING
-========================================== */
-
 function updateFilter(filter) {
 
     const filteredTemples =
@@ -348,8 +325,7 @@ function updateFilter(filter) {
 
 
 
-    /* Highlight active menu item */
-
+    
     filterLinks.forEach((link) => {
 
         const isActive =
@@ -383,10 +359,6 @@ function updateFilter(filter) {
 
 
 
-/* ==========================================
-   FILTER BUTTON EVENTS
-========================================== */
-
 filterLinks.forEach((link) => {
 
     link.addEventListener("click", (event) => {
@@ -417,9 +389,7 @@ filterLinks.forEach((link) => {
             "false"
         );
 
-
-        /* Update browser URL */
-
+        
         history.replaceState(
             null,
             "",
@@ -430,11 +400,6 @@ filterLinks.forEach((link) => {
 
 });
 
-
-
-/* ==========================================
-   MOBILE MENU
-========================================== */
 
 menuButton.addEventListener("click", () => {
 
@@ -471,28 +436,16 @@ menuButton.addEventListener("click", () => {
 });
 
 
-
-/* ==========================================
-   FOOTER YEAR
-========================================== */
-
 document.querySelector("#currentyear").textContent =
     new Date().getFullYear();
 
 
-
-/* ==========================================
-   LAST MODIFIED
-========================================== */
 
 document.querySelector("#lastModified").textContent =
     `Last Modification: ${document.lastModified}`;
 
 
 
-/* ==========================================
-   DISPLAY HOME PAGE WHEN LOADED
-========================================== */
 
 const startingFilter =
     window.location.hash.replace("#", "");
