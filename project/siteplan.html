@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CyberStart website planning document for WDD131.">
+<title>CyberStart | Website Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">CS</div>
+    <div><p class="eyebrow">WDD131 Website Planning Document</p><h1>CyberStart</h1></div>
+  </div>
+  <p>A Beginner's Guide to Cybersecurity</p>
+</header>
+
+<main>
+<section class="card intro">
+<h2>Project Overview</h2>
+<p>CyberStart is a beginner-friendly educational website that introduces people to cybersecurity, common online threats, safer digital habits, learning paths, careers, and useful cybersecurity resources.</p>
+</section>
+
+<section class="card">
+<h2>1. Site Name</h2>
+<div class="site-name"><div class="logo">CS</div><div><h3>CyberStart</h3><p><strong>Tagline:</strong> A Beginner's Guide to Cybersecurity</p></div></div>
+<p>I chose the name <strong>CyberStart</strong> because the website is designed for people who are at the beginning of their cybersecurity journey. The name is short, memorable, and communicates the idea of taking a first step into cybersecurity.</p>
+</section>
+
+<section class="card">
+<h2>2. Site Purpose</h2>
+<p>The purpose of CyberStart is to provide a simple and practical starting point for people who have little or no cybersecurity background. The site will explain basic cybersecurity concepts, common online security threats, essential security practices, recommended learning paths, cybersecurity careers, and useful tools and resources. It will also provide practical tips that visitors can use to improve their online safety.</p>
+</section>
+
+<section class="card">
+<h2>3. Target Audience</h2>
+<p>The primary audience is beginners, students, and everyday internet users who want to understand cybersecurity without needing an advanced technical background. The content will use clear language and practical examples so visitors can learn at their own pace.</p>
+</section>
+
+<section class="card">
+<h2>4. Scenarios</h2>
+<ul>
+<li>What are the most common cybersecurity threats I should know about as a beginner?</li>
+<li>What simple steps can I take to protect my accounts and personal information online?</li>
+<li>How can I start learning cybersecurity if I have little or no technical experience?</li>
+<li>What cybersecurity careers and skills can a beginner work toward?</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>5. Planned Site Pages</h2>
+<table>
+<thead><tr><th>Page</th><th>Planned Content</th></tr></thead>
+<tbody>
+<tr><td>Home</td><td>Introduction to cybersecurity, beginner overview, key safety message, and links to the main topics.</td></tr>
+<tr><td>Threats &amp; Safety</td><td>Common threats such as phishing, malware, weak passwords, scams, and practical protection tips.</td></tr>
+<tr><td>Learn &amp; Careers</td><td>Beginner learning paths, useful resources, cybersecurity skills, tools, and possible career directions.</td></tr>
+<tr><td>References</td><td>Sources used for information and external resources. This page will be linked in the footer.</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="card">
+<h2>6. Color Schema</h2>
+<p>The color scheme communicates technology, security, clarity, and trust while maintaining readable contrast.</p>
+<div class="colors">
+<div class="sample navy">#0B132B</div><div><h3>Deep Navy</h3><p>Header, major headings, navigation, and dark backgrounds.</p></div>
+<div class="sample cyan">#22D3EE</div><div><h3>Cyber Cyan</h3><p>Accents, links, borders, buttons, and interactive highlights.</p></div>
+<div class="sample green">#22C55E</div><div><h3>Security Green</h3><p>Positive security messages, success states, and selected indicators.</p></div>
+<div class="sample light">#F8FAFC</div><div><h3>Cloud White</h3><p>Main page background and light content areas.</p></div>
+</div>
+</section>
+
+<section class="card">
+<h2>7. Typography</h2>
+<div class="type"><h3>Roboto Mono</h3><p>Used for major headings, section labels, and selected technology-themed elements.</p></div>
+<div class="type"><h3 class="roboto">Roboto</h3><p class="roboto">Used for paragraphs, navigation, descriptions, forms, buttons, and general interface content.</p></div>
+</section>
+
+<section class="card">
+<h2>8. Home Page Wireframes</h2>
+<p>These diagrams show the planned relationship and placement of major content areas.</p>
+<div class="wireframes">
+<div class="wireframe mobile">
+<h3>Mobile View</h3>
+<div class="box dark">Logo + Site Name</div>
+<div class="box">☰ Navigation</div>
+<div class="box hero">Hero / Welcome Message</div>
+<div class="box">Cybersecurity Introduction</div>
+<div class="box">Quick Safety Tip</div>
+<div class="box">Common Threats Preview</div>
+<div class="box">Learning Path Preview</div>
+<div class="box form">Security Check / Form</div>
+<div class="box dark">Footer + References</div>
+</div>
+<div class="wireframe desktop">
+<h3>Desktop View</h3>
+<div class="box dark">Logo + Site Name &nbsp; | &nbsp; Home | Threats &amp; Safety | Learn &amp; Careers</div>
+<div class="box hero">Wide Hero / Welcome Message + Call to Action</div>
+<div class="columns"><div class="box">Cybersecurity Basics</div><div class="box">Common Threats</div><div class="box">Safety Tips</div></div>
+<div class="columns"><div class="box">Learning Path</div><div class="box">Careers</div><div class="box">Resources</div></div>
+<div class="box form">Interactive Security Check / Form</div>
+<div class="box dark">Footer | References | Copyright</div>
+</div>
+</div>
+</section>
+
+<section class="card">
+<h2>9. Planned JavaScript Features</h2>
+<ul>
+<li>Interactive security-tip feature using an array of cybersecurity tips.</li>
+<li>Threat or learning-resource filtering using JavaScript array methods.</li>
+<li>Conditional messages responding to user selections or quiz/check results.</li>
+<li>DOM selection and modification for dynamic content.</li>
+<li>Event listeners for buttons, forms, and filters.</li>
+<li>Local storage to remember a selected preference or progress.</li>
+</ul>
+<p>These features are planned to demonstrate functions, DOM interaction, events, conditional branching, objects, arrays, array methods, template literals, and localStorage in the final project.</p>
+</section>
+
+<section class="card">
+<h2>10. HTML Form</h2>
+<p>The final site will include an accessible HTML form for a simple cybersecurity self-check or beginner safety resource request. Labels will be properly associated with form controls.</p>
+</section>
+
+<section class="card">
+<h2>11. Responsive Design and Accessibility</h2>
+<p>The final website will support mobile portrait, mobile landscape, tablet, and desktop screens. It will use responsive CSS, readable typography, meaningful headings, descriptive alternative text, visible focus states, sufficient color contrast, optimized images, and lazy loading where appropriate.</p>
+</section>
+</main>
+
+<footer>
+<p>WDD131 — CyberStart Website Planning Document</p>
+<p>Project folder: <code>/wdd131/project/</code></p>
+</footer>
+</body>
+</html>

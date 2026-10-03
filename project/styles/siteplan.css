@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@500;700&display=swap');
+
+:root {
+  --navy: #0B132B;
+  --cyan: #22D3EE;
+  --green: #22C55E;
+  --white: #F8FAFC;
+  --surface: #FFFFFF;
+  --text: #172033;
+  --border: #CBD5E1;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--text);
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 2rem 5%;
+  border-bottom: 5px solid var(--cyan);
+}
+
+.brand {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 3.8rem;
+  height: 3.8rem;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--cyan);
+  border-radius: 10px;
+  color: var(--cyan);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--cyan);
+  font-family: "Roboto Mono", monospace;
+  font-size: .8rem;
+}
+
+h1, h2, h3 { font-family: "Roboto Mono", monospace; line-height: 1.25; }
+h1 { margin: .2rem 0; font-size: clamp(2rem, 6vw, 3rem); }
+h2 { color: var(--navy); border-left: 5px solid var(--cyan); padding-left: .7rem; }
+h3 { color: var(--navy); }
+
+header > p, main, footer { max-width: 1100px; margin-left: auto; margin-right: auto; }
+header > p { margin-top: 1rem; }
+
+main { width: 92%; margin-top: 2rem; margin-bottom: 2rem; }
+
+.card {
+  background: var(--surface);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(11,19,43,.10);
+}
+
+.intro { border-top: 5px solid var(--green); }
+
+.site-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #E6FFFA;
+  border-left: 4px solid var(--green);
+  border-radius: 8px;
+}
+
+.site-name h3 { margin: 0; }
+.site-name p { margin-bottom: 0; }
+
+li { margin-bottom: .6rem; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: .8rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+th { background: var(--navy); color: var(--white); font-family: "Roboto Mono", monospace; }
+tr:nth-child(even) { background: #F1F5F9; }
+
+.colors {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sample {
+  min-height: 70px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
+
+.navy { background: #0B132B; color: #FFFFFF; }
+.cyan { background: #22D3EE; color: #0B132B; }
+.green { background: #22C55E; color: #0B132B; }
+.light { background: #F8FAFC; color: #0B132B; border: 1px solid var(--border); }
+
+.type {
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #F1F5F9;
+  border-left: 4px solid var(--cyan);
+}
+.roboto { font-family: "Roboto", Arial, sans-serif; }
+
+.wireframes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.wireframe {
+  background: #E2E8F0;
+  border: 3px solid var(--navy);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.wireframe h3 { text-align: center; margin-top: 0; }
+
+.box {
+  min-height: 55px;
+  margin-bottom: .7rem;
+  padding: .7rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: var(--surface);
+  border: 2px dashed var(--navy);
+  font-family: "Roboto Mono", monospace;
+  font-size: .82rem;
+}
+
+.box.dark { background: var(--navy); color: var(--white); border-color: var(--cyan); }
+.box.hero { min-height: 105px; background: #BAE6FD; }
+.box.form { background: #DCFCE7; }
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .7rem;
+}
+
+footer {
+  padding: 2rem 5%;
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  border-top: 4px solid var(--green);
+}
+
+footer p { margin: .3rem; }
+
+code {
+  color: var(--navy);
+  background: #E2E8F0;
+  padding: .15rem .3rem;
+  border-radius: 4px;
+}
+
+@media (min-width: 700px) {
+  main { margin-top: 3rem; margin-bottom: 3rem; }
+  .card { padding: 2rem; }
+  .wireframes { grid-template-columns: .7fr 1.3fr; align-items: start; }
+  .columns { grid-template-columns: repeat(3, 1fr); }
+}
