@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review submission confirmation and review counter for WDD 131.">
+    <meta name="author" content="Martins Amorin">
+    <title>Review Submitted | WDD 131</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <main class="page-wrapper">
+        <section class="confirmation-card" aria-labelledby="confirmation-title">
+            <p class="eyebrow">WDD 131 • Product Review</p>
+            <h1 id="confirmation-title">Thank You!</h1>
+            <p class="confirmation-message">Your product review has been submitted successfully.</p>
+
+            <div class="counter-box">
+                <p>You have completed</p>
+                <p class="review-count" id="reviewCount" aria-live="polite">0</p>
+                <p>product review<span id="reviewPlural">s</span>.</p>
+            </div>
+
+            <a class="back-link" href="form.html">Write Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Martins Amorin | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
