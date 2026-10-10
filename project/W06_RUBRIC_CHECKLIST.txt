@@ -1,0 +1,39 @@
+WDD131 W06 PROJECT — RUBRIC PRE-SUBMISSION CHECKLIST
+Project: CyberStart — A Beginner's Guide to Cybersecurity
+
+PROJECT STRUCTURE AND NAMING
+[✓] project/index.html — home page
+[✓] project/threats.html — threats and safety page
+[✓] project/learn.html — learning and careers page
+[✓] project/references.html — source list and references page
+[✓] project/siteplan.html — original site plan retained
+[✓] project/styles/style.css — external shared website stylesheet
+[✓] project/styles/siteplan.css — external site-plan stylesheet
+[✓] project/scripts/main.js — external JavaScript
+[✓] project/images/ — original locally stored SVG illustrations
+
+RUBRIC EVIDENCE TO CHECK
+[✓] Three or more content pages with consistent navigation and visual theme.
+[✓] Semantic landmarks, page-specific titles and meta descriptions, skip links, headings, labels, and accessible status feedback are included.
+[✓] External CSS is used for the site pages; responsive breakpoints and keyboard-focus styles are included.
+[✓] Meaningful beginner cybersecurity content and original SVG illustrations are included; references page is linked from each page footer.
+[✓] The home page contains a working HTML form (the safety-habits checklist).
+[✓] JavaScript uses multiple functions, DOM selection/modification, event listeners, conditional branching, objects, arrays, array methods, template literals for generated output, and localStorage.
+[✓] The below-the-fold safety checklist illustration uses native loading="lazy". Above-the-fold hero illustrations are intentionally eager-loaded for good perceived performance.
+
+REQUIRED MANUAL TESTS BEFORE SUBMISSION
+[ ] Extract/copy the project folder into the wdd131 GitHub repository.
+[ ] Open project/index.html with Live Server and click every navigation/footer link.
+[ ] Test the mobile menu at a narrow viewport and keyboard-tab through all controls.
+[ ] On the home page, select safety habits, click “Review my habits,” reload the page, and verify selections persist. Click “Clear saved checklist” and verify it clears.
+[ ] On the threats page, test every filter option and verify the result count and cards update.
+[ ] Check DevTools Console for JavaScript errors on every page.
+[ ] Run the course W05 site-plan audit if required and the W06 Page Audit tool.
+[ ] Run Lighthouse for mobile AND desktop: Performance, Accessibility, Best Practices, SEO.
+[ ] Use DevTools CSS Overview and address any contrast warnings.
+[ ] Validate all HTML pages and the stylesheet with appropriate validators; fix any reported issues.
+[ ] Commit and push the project to GitHub Pages, then test the published URL in a private/incognito window.
+[ ] Submit the published project URL in Canvas before the deadline.
+
+IMPORTANT
+The included files are structured to address the rubric, but no particular score can be guaranteed until the project is tested in your browser and with the course audit tools. Do not submit until the manual tests above are complete.

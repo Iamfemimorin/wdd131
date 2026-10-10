@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Start learning cybersecurity with clear beginner guides, practical online safety habits, and learning resources from CyberStart.">
+  <meta name="author" content="Martins Chinedu Amorin">
+  <meta name="theme-color" content="#0B132B">
+  <title>CyberStart | A Beginner's Guide to Cybersecurity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="CyberStart home"><span class="brand-mark" aria-hidden="true">CS</span><span><strong>CyberStart</strong><small>A Beginner's Guide to Cybersecurity</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu <span aria-hidden="true">☰</span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a class="active" aria-current="page" href="index.html">Home</a>
+        <a href="threats.html">Threats &amp; Safety</a>
+        <a href="learn.html">Learn &amp; Careers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR FIRST STEP TO DIGITAL CONFIDENCE</p>
+        <h1>Make safer choices in a connected world.</h1>
+        <p>Cybersecurity is not just for experts. Learn how to protect your accounts, recognize online threats, and build skills one practical step at a time.</p>
+        <div class="hero-actions"><a class="button button-primary" href="threats.html">Explore online threats</a><a class="button button-secondary" href="learn.html">Start learning</a></div>
+        <p class="hero-note"><span class="status-dot" aria-hidden="true"></span> Small habits. Stronger digital safety.</p>
+      </div>
+      <div class="hero-art"><img src="images/cyber-shield.svg" alt="Illustration of a shield protecting a connected digital network" width="520" height="420" fetchpriority="high"></div>
+    </section>
+
+    <section class="section intro-grid" aria-labelledby="basics-heading">
+      <div><p class="eyebrow">THE BASICS</p><h2 id="basics-heading">What is cybersecurity?</h2></div>
+      <div><p>Cybersecurity is the practice of protecting devices, accounts, networks, and information from unauthorized access, damage, or disruption. It includes technical tools, but it also depends on everyday decisions—like checking a link before clicking it.</p><p>You do not need to learn everything at once. Begin with a few reliable habits, then build your knowledge as you go.</p></div>
+    </section>
+
+    <section class="section" aria-labelledby="start-heading">
+      <div class="section-heading"><div><p class="eyebrow">EXPLORE CYBERSTART</p><h2 id="start-heading">Choose your next step</h2></div><p>Use these beginner-friendly guides to build your confidence.</p></div>
+      <div class="card-grid three-col">
+        <article class="topic-card"><span class="card-icon" aria-hidden="true">01</span><h3>Know the threats</h3><p>Learn how phishing, malware, scams, and weak passwords can put your information at risk.</p><a class="text-link" href="threats.html">Explore threats <span aria-hidden="true">→</span></a></article>
+        <article class="topic-card"><span class="card-icon" aria-hidden="true">02</span><h3>Build safer habits</h3><p>Use unique passwords, multifactor authentication, software updates, and careful link checking.</p><a class="text-link" href="threats.html#safety-habits">See safety habits <span aria-hidden="true">→</span></a></article>
+        <article class="topic-card"><span class="card-icon" aria-hidden="true">03</span><h3>Explore a learning path</h3><p>Discover foundational skills, practice environments, and cybersecurity career directions.</p><a class="text-link" href="learn.html">Explore learning <span aria-hidden="true">→</span></a></article>
+      </div>
+    </section>
+
+    <section class="tip-banner" aria-labelledby="tip-heading">
+      <div class="tip-symbol" aria-hidden="true">✓</div><div class="tip-content"><p class="eyebrow">YOUR QUICK SAFETY TIP</p><h2 id="tip-heading">A safer internet starts with one habit.</h2><p id="daily-tip" aria-live="polite">Use a unique password for every important account.</p></div><button class="button button-light" id="new-tip" type="button">Show another tip</button>
+    </section>
+
+    <section class="section check-section" aria-labelledby="check-heading">
+      <div class="check-copy"><p class="eyebrow">QUICK SELF-CHECK</p><h2 id="check-heading">How many safety habits do you use?</h2><p>Select the habits you already practice. Your selections are saved in this browser so you can return to your checklist later.</p><img class="check-illustration" src="images/safe-habits.svg" alt="Illustration of a checklist with security check marks" width="360" height="240" loading="lazy"></div>
+      <form id="safety-check" class="safety-form">
+        <fieldset><legend>My current safety habits</legend>
+          <label class="check-option"><input type="checkbox" name="habit" value="passwords"> I use unique passwords for important accounts.</label>
+          <label class="check-option"><input type="checkbox" name="habit" value="mfa"> I enable multifactor authentication where available.</label>
+          <label class="check-option"><input type="checkbox" name="habit" value="updates"> I install device and software updates.</label>
+          <label class="check-option"><input type="checkbox" name="habit" value="links"> I check unexpected links and messages before responding.</label>
+          <label class="check-option"><input type="checkbox" name="habit" value="backup"> I back up important files.</label>
+        </fieldset>
+        <button class="button button-primary" type="submit">Review my habits</button>
+        <p id="check-feedback" class="form-feedback" aria-live="polite">Choose the habits that apply to you.</p>
+        <button class="text-button" id="reset-check" type="button">Clear saved checklist</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">CS</span><span><strong>CyberStart</strong><small>Learn safely. Grow confidently.</small></span></a><p class="footer-tagline">Helping beginners take practical steps toward better digital safety.</p></div><div class="footer-links"><h2>Explore</h2><a href="threats.html">Threats &amp; Safety</a><a href="learn.html">Learn &amp; Careers</a><a href="references.html">References</a></div><div class="footer-links"><h2>Remember</h2><p>Pause before you click. Protect your accounts. Keep learning.</p></div></div><div class="footer-bottom"><p>&copy; <span class="current-year"></span> CyberStart | WDD131 Project</p><p>Educational information only; no site can guarantee complete protection.</p></div></footer>
+</body>
+</html>
