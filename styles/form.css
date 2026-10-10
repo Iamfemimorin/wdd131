@@ -124,10 +124,12 @@ button:focus {
     outline-offset: 2px;
 }
 
+
 .required-mark {
-    color: #b00020;
+    color: #8b001a;
     font-weight: 700;
 }
+
 
 .optional-text {
     color: #555555;
