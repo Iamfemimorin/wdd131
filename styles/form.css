@@ -126,9 +126,22 @@ button:focus {
 
 
 
-.required-mark {
+.required-note {
     color: #222222;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+
+.required-mark {
+    color: #b42318;
     font-weight: 700;
+}
+
+/* Required marks on dark backgrounds */
+.form-header .required-mark,
+footer .required-mark {
+    color: #ffdf70;
 }
 
 
